@@ -3,7 +3,7 @@ e.target.matches("#buscador")
 console.log(e.target.value)
 
   if(e.target.matches("#buscador")){
-    document.querySelectorAll(".movies").forEach(tarjeta =>{
+    document.querySelectorAll(".card").forEach(tarjeta =>{
         tarjeta.textContent.toLowerCase().includes(e.target.value.toLowerCase())
         ?tarjeta.classList.remove("filtro")
         :tarjeta.classList.add("filtro")
